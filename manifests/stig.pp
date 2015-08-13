@@ -29,7 +29,7 @@ define jre::stig(
 
     file { $dp:
         ensure => present,
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 
 
@@ -75,7 +75,7 @@ define jre::stig(
 
     file { $dc:
         ensure => present,
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 
 # Enforce policy regarding the contents of the deployment configuration file.
